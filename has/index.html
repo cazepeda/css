@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:has() Pseudo-Class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <li></li>
+        <li></li>
+        <li></li>        
+        <nav>
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </nav>
+        <form action="#search" class="search">
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search">
+        </form>
+    </header>
+    <main>
+        <section class="div">
+            <h1>DIV</h1>
+
+            <div><img src="http://placehold.it/1000x200" alt=""></div>
+            <div>
+                <p>No image here!</p>
+            </div>
+            <div>
+                <p>This has text and <img src="http://placehold.it/300x300" alt="placeholder image of 300 width and height."></p>
+            </div>
+        </section>
+
+        <section class="table">
+            <h1>TABLE</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>First</th>
+                        <th>Second</th>
+                        <th>Third</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th>Uno</th>
+                            <th>Dos</th>
+                            <th>Tres</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>One</td>
+                        <td>Two</td>
+                        <td>Three</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="any-link">
+            <h1>ANCHOR</h1>
+
+            <p><a href="#plain-link-with-text">Plain link with text</a></p>
+
+            <p><a href="#link-with-image"><img src="http://placehold.it/100x100" alt="placeholder image with 100 width by 100 height pixels"></a></p>
+        </section>
+    </main>
+</body>
+</html>

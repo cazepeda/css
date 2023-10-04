@@ -1,0 +1,20 @@
+/* div:has(img) {
+    border: 3px double gray;
+} */
+
+div:has(> img) {
+    border: 3px double gray;
+}
+
+table:has(thead th) {
+    border: 3px double gray;
+}
+
+a:any-link:has(img:only-child) {
+    border: 3px double gray;
+    display: inline-block;
+}
+
+header:has(nav, form.search) {
+    border: 3px double gray;
+}
