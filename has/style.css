@@ -7,7 +7,7 @@ div:has(> img) {
 }
 
 table:has(thead th) {
-    border: 3px double gray;
+    /* border: 3px double gray; */
 }
 
 a:any-link:has(img:only-child) {
@@ -17,4 +17,41 @@ a:any-link:has(img:only-child) {
 
 header:has(nav, form.search) {
     border: 3px double gray;
+}
+
+/* section:has(+ h2 em, table+table, ol ul ol ol) {
+    border: 3px double blue;
+} */
+section:has(+ h2 em),
+section:has( table + table),
+section:has(ol ul ol ol){
+    border: 3px dotted blue;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+ul:has(li ol) { border: 1px solid red;}
+ul:has(ol ul ol) { font-style: italic; }
+
+/* h1:has(img),
+h2:has(img),
+h3:has(img),
+h4:has(img),
+h5:has(img),
+h6:has(img) {
+    border: 3px dotted blue;
+    display: block;
+    width: 25px;
+} */
+/* :is(h1, h2, h3, h4, h5, h6):has(img) {
+    border: 3px dotted blue;
+    width: 25px;
+} */
+:is(h1, h2, h3, h4, h5, h6):not(:has(img)) {
+    border: 3px dotted blue;
+    width: 25px;
+}
+
+div:has(.popup) {
+    border: 3px solid red;
 }
