@@ -1,0 +1,128 @@
+body {
+    margin-inline: auto;
+    justify-content: center;
+    background-color: #444;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+body a {
+    color: #ddd;
+}
+
+ul.img-buttons {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+}
+
+ul.img-buttons li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.img-buttons figure {
+    margin: 0;
+}
+
+ul.img-buttons a {
+    text-align: center;
+}
+
+ul.img-buttons img {
+    height: 100px;
+}
+
+.lightbox .lightbox-open {
+    display: flex;
+    place-items: center;
+    position: fixed;
+    justify-content: space-between;
+    opacity: 0;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: opacity 0.4s ease;
+    font-size: clamp(1rem, 3rem, 3vw);
+    font-weight: 900;
+    line-height: 1;
+    z-index: 100;
+}
+
+.lightbox .lightbox-open:target {
+    top: 0;
+    opacity: 1;
+}
+
+.lightbox .lightbox-open a {
+    position: relative;
+    z-index: 106;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox .lightbox-open a.lb-link {
+    background-color: black;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    line-height: 1;
+    padding: 0.2rem 1rem 1rem;
+    height: 100%;
+}
+
+.lightbox .lightbox-open a.lb-link:hover {
+    opacity: 1;
+}
+
+.lightbox .lightbox-open .closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: right;
+    color: transparent;
+}
+
+.lightbox .lightbox-open figure {
+    z-index: 107;
+    position: relative;
+    max-width: 93vw;
+}
+
+.lightbox .lightbox-open .x {
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    top: -1.3rem;
+    right: -1.3rem;
+    z-index: 109;
+    background-color: black;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.4rem;
+}
+
+.lightbox .lightbox-open .x:hover {
+    opacity: 1;
+}
+
+.lightbox .lightbox-open figcaption {
+    margin-top: 0;
+    padding: 0.5rem 1rem;
+    font-weight: initial;
+    font-size: 1.2rem;
+}
+
+.lightbox .lightbox-open img {
+    max-width: 85vmin;
+    max-height: 90vmin;
+    position: relative;
+}

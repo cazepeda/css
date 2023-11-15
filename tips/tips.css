@@ -1,0 +1,4 @@
+/* background color trick for visual break using linear-gradient */
+.full-width-bg-cut-off-visual {
+    background-image: linear-gradient(#fff 0, #fff 10rem, #f2f0ea 10rem);
+}

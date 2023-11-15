@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- use php code or whatever flavor you like to work through logic. I use Kirby and some of that is shown here -->
+    
+    <div class="lightbox">
+        <ul class="img-buttons">
+            <!-- create all of the image openers and define the image index: -->
+            <!-- php	foreach ($images as $image): -->
+            <!-- php $num = $images->indexOf($image) + 1 -->
+            <li>
+                <!-- php add echo $num after 'img' inside the id: -->
+                <a href="#img1">
+                    <figure>
+                        <img src="https://lukedorny.com/public/screenshot/v5-lukedorny-grid.png" alt="thumb: lukedorny v5 grid edits" />
+                        <figcaption>#img1 caption grid</figcaption>
+                    </figure>
+                </a>
+            </li>
+    
+            <li>
+                <a href="#img2">
+                    <figure>
+                        <img src="https://lukedorny.com/public/screenshot/luxbuscover.png" alt="thumb: luxbus cover v1"
+                            height="100" />
+                        <figcaption>#img2 caption luxbux cover v1</figcaption>
+                    </figure>
+                </a>
+            </li>
+    
+            <li>
+                <!-- php add echo $num after 'img' inside the id: -->
+                <a href="#img3">
+                    <figure>
+                        <img src="https://lukedorny.com/public/screenshot/luxbuscover2.png" alt="thumb: luxbus cover" height="100" />
+                        <figcaption>#img3 caption luxbus cover v2</figcaption>
+                    </figure>
+                </a>
+            </li>
+    
+    
+        </ul>
+    
+        <!-- now all of the full size images with click links: -->
+    
+        <!-- //create all of the lightboxes -->
+        <!-- php foreach ($images as $image):  -->
+        <!-- php $num = $images->indexOf($image) + 1 // start at 1 ?-->
+        <!-- php add echo $num after 'img' inside the id: -->
+        <div id="img1" class="lightbox-open">
+            <a href="#none" class="closer"><span>&times;</span></a>
+            <!-- if ($image->isFirst()) : -->
+            <a href="#none" class="lb-link prev">&times;</a>
+            <!-- else : -->
+            <!-- $prev = $num -1 -->
+            <!-- php add in $num after '#img' here, too: -->
+            <!-- <a href="#img1" class="lb-link prev">&laquo;</a> -->
+            <!-- php endif -->
+            <figure>
+                <img src="https://lukedorny.com/public/screenshot/v5-lukedorny-grid.png" alt="image 1 lukedorny v5 grid edits" />
+                <figcaption>img 1 caption lukedorny v5 grid edits</figcaption>
+                <a href="#none" class="x">&times;</a>
+            </figure>
+            <!-- php if ($image->isLast()) : -->
+            <!-- <a href="#none" class="lb-link next">&times;</a> -->
+            <!-- php else : -->
+            <!-- php $next = $num + 1 -->
+            <a href="#img2" class="lb-link next">&raquo;</a>
+            <!-- php endif -->
+        </div>
+    
+    
+        <div id="img2" class="lightbox-open">
+            <a href="#none" class="closer"><span>&times;</span></a>
+            <a href="#img1" class="lb-link prev">&laquo;</a>
+            <figure>
+                <img src="https://lukedorny.com/public/screenshot/luxbuscover.png" alt="image 2 luxbus cover v1" />
+                <figcaption>img 2 caption luxbus cover v1</figcaption>
+                <a href="#none" class="x">&times;</a>
+            </figure>
+            <a href="#img3" class="lb-link next">&raquo;</a>
+        </div>
+    
+    
+    
+        <div id="img3" class="lightbox-open">
+            <a href="#none" class="closer"><span>&times;</span></a>
+            <a href="#img2" class="lb-link prev">&laquo;</a>
+            <figure>
+                <img src="https://lukedorny.com/public/screenshot/luxbuscover2.png" alt="image 3 luxbus cover v 2" />
+                <figcaption>img 3 caption luxbux cover v2</figcaption>
+                <a href="#none" class="x">&times;</a>
+            </figure>
+            <a href="#none" class="lb-link next">&times;</a>
+        </div>
+    
+    </div>
+</body>
+</html>
