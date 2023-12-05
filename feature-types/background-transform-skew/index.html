@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background transform skew</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main content-grid relative z-0">
+        <section class="hero-main full-width bg-primary relative z-1 pb-5">
+            <figure class="figure flex mb-5">
+                <img class="relative z-2" src="https://cdn.dribbble.com/uploads/50932/original/9c0a8430d3d43a3df97f919e97e23515.jpg?1699456276" />
+                <figcaption class="figcaption">
+                    <h1>The Magic of Details: How UX Microinteractions Transform Products</h1>
+                    <p class="byline">by Kati Vervack in <a href="/stories/categories/community">Community</a>
+                        <time datetime="2023-11-14">Nov 14, 2023</time>
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="breakout transform-outer bg-primary bg-tertiary relative z-2">
+            <div class="transform-inner ptb-2">
+                <p><em>Thanks to our friends at <a href="http://drbl.in/k/20231114_ElinextThanks">Elinext</a> for sponsoring this blog! Author: Anastasiya Babich, UI/UX Designer Elinext</em></p>
+
+                <p>Modern interfaces are about much more than functionality. They must be user-friendly, intuitive, and enjoyable. If you have two apps with the same functions, you’d likely choose the one that feels more comfortable and speaks to you in clear, unambiguous language.</p>
+
+                <p>Over 20 years ago, an often-cited Stanford University study <strong>showed 75% of users form their perception of a company’s credibility based on the design of its website or app.</strong></p>
+
+                <p>Just imagine how much design affects perceptions of credibility today! Good UX design can not only improve the user experience but also significantly increase trust in the company and greatly boost sales.</p>
+            </div>
+        </section>
+
+        <section class="full-width hero-main bg-primary transform-outer">
+            <figure class="figure flex transform-inner">
+                <figcaption class="figcaption">
+                    <h1>The Magic of Details: How UX Microinteractions Transform Products</h1>
+                    <p class="byline">by Kati Vervack in <a href="/stories/categories/community">Community</a>
+                        <time datetime="2023-11-14">Nov 14, 2023</time>
+                    </p>
+                </figcaption>
+                <img src="https://cdn.dribbble.com/uploads/50932/original/9c0a8430d3d43a3df97f919e97e23515.jpg?1699456276" />
+            </figure>
+        </section>
+
+        <section class="transform-outer bg-primary bg-tertiary relative z-2">
+            <div class="transform-inner ptb-2">
+                <p><em>Thanks to our friends at <a href="http://drbl.in/k/20231114_ElinextThanks">Elinext</a> for sponsoring this blog! Author: Anastasiya Babich, UI/UX Designer Elinext</em></p>
+        
+                <p>Modern interfaces are about much more than functionality. They must be user-friendly, intuitive, and enjoyable. If you have two apps with the same functions, you’d likely choose the one that feels more comfortable and speaks to you in clear, unambiguous language.</p>
+        
+                <p>Over 20 years ago, an often-cited Stanford University study <strong>showed 75% of users form their perception of a company’s credibility based on the design of its website or app.</strong></p>
+        
+                <p>Just imagine how much design affects perceptions of credibility today! Good UX design can not only improve the user experience but also significantly increase trust in the company and greatly boost sales.</p>
+            </div>
+        </section>
+
+        <section class="content transform-outer">
+            <div class="transform-inner pt-5">
+            <p><a href="http://drbl.in/k/20231114_Elinext1">UX/UI designers</a> use various tricks to create user-friendly interfaces: they work out information architecture, conduct <a href="http://drbl.in/k/20231114_Elinext2">usability tests</a>, and much more. But the true UX magic happens when the main structure of an application is ready — and this magic has a name: microinteractions.</p>
+
+            <p>UX microinteractions are subtle system responses to user actions or system events (e.g., updating the order status, receiving a new message, and so on). Usually, they are small animations, visual or sound effects that follow some action.</p>
+
+            <p>Most of the time, users don’t consciously notice the presence of microinteractions in the interface. However, what they will undoubtedly notice is their absence.</p>
+
+            <p>Consider opening an application and seeing a blank screen with no loading indicators. It will likely trigger a sense of uncertainty: what is happening? Or imagine that the buttons on the site don’t change their state when hovered over. In that case, it will be unclear whether they are functioning at all.</p>
+
+            <p>Finally, visualize filling out a lengthy form, but the fields remain unchanged, and the interface doesn’t provide any feedback on whether they are being filled out correctly. Only after you submit the form would you learn that errors were made, and all the information you entered must be reset.</p>
+
+            <p>Bottom line: after such an experience, you likely won’t return to this product and will instead switch to a competitor’s app with good UX.</p>
+
+            <p>All the issues mentioned above are the result of not paying enough attention to microinteractions. This impact — the essential value that microinteractions hold for today’s UX — is precisely what we’ll talk about in this article.</p>
+
+            <h3 id="how-do-ux-microinteractions-improve-the-user-experience"><strong>How do UX microinteractions improve the user experience?</strong></h3>
+
+            <p>Microinteractions turn an automated, soulless system into a responsive, friendly, and more human interface. It’s like adding spices in cooking: without them, any dish may seem bland, but as soon as you add a pinch of seasoning, a whole range of flavors and aromas is revealed. But how exactly do microinteractions enhance usability? Let’s delve deeper.</p>
+
+            <p><strong>👀 Display the current system status</strong></p>
+
+            <p>Here, we can recall the fundamental <a href="http://drbl.in/k/20231114_Elinext3">usability heuristics</a> formulated by Jacob Nielsen. One of these heuristics emphasizes that the system’s state should always be clear.</p>
+
+            <p>Thanks to microinteractions, users understand what’s happening in the interface: a loading indicator shows that the application is working, and a pop-up window informs about an error. Users shouldn’t be left with questions like <em>What’s happening here?</em> Or where <em>am I?</em> The system should provide answers to these questions before they even arise.</p>
+
+            <p><strong>👀 Capture and hold attention</strong></p>
+
+            <p>When a person interacts with an interface and receives a lively response from it, a dialog begins. This dialog generates interest and engagement. For this reason, well-crafted micro-interactions encourage visitors to stay in the app or on the website for longer periods, which, in turn, positively impacts analytics and <a href="http://drbl.in/k/20231114_Elinext4">conversion rates</a>. Research conducted by Forrester indicates that a well-designed user experience can <strong>increase conversion rates by up to 200%.</strong></p>
+
+            <p><strong>👀 Provide hints and guidance</strong></p>
+
+            <p>Hints make it easier to navigate through the system and help newcomers get acclimated more quickly during onboarding. Small supporting animations, tooltips, and hints direct the user, assisting them in better understanding how to interact with the application.</p>
+
+            <p>For instance, when a newcomer first enters the application, a pop-up animated hint can offer action options, reducing the feeling of confusion and making the process more intuitive.</p>
+
+            <p><strong>👀 Prevent Errors</strong></p>
+
+            <p>Here, we can mention another one of Nielsen’s heuristics that emphasizes the importance of error prevention at early stages. This can be achieved by providing users with feedback and warning them in advance about possible issues before they become critical.</p>
+
+            <p>For example, when creating a password, the system should provide feedback on whether it meets all the criteria before the user presses the confirmation button.</p>
+
+            <h3 id="the-anatomy-of-ux-microinteractions"><strong>The Anatomy of UX Microinteractions</strong></h3>
+
+            <p>Let’s take a closer look at the anatomy of microinteractions and figure out what they’re made of.</p>
+
+            <p>Typically, four key elements are recognized:</p>
+
+            <p><strong>🙌 Triggers</strong> are events or actions that initiate microinteractions. They can be categorized into two types:</p>
+
+            <ul>
+                <li><strong><em>User-initiated triggers</em></strong> — these are intentional actions taken by the user, such as clicking a button, dragging an element, or sending a message;</li>
+                <li><strong><em>System-initiated triggers</em></strong> — these are specific system events, like the completion of a page load, a change in network status, or the detection of an error.</li>
+            </ul>
+
+            <p><strong>🙌 Rules</strong> define what actions will happen and in what order they should occur after a trigger is activated. Typically, these rules are not visible during system use; they are essential for managing the microinteraction. And the third part of the scheme — feedback — is used to visualize the rules.</p>
+
+            <p><strong>🙌 Feedback</strong> is the mechanism for informing the user about the results of a microinteraction.</p>
+
+            <ul>
+                <li><strong><em>Visual</em></strong> feedback includes animations, hover effects, icon changes, and other visual elements;</li>
+                <li><strong><em>Audio</em></strong> feedback can manifest itself in the form of various sound signals, beeps, clicks, etc.;</li>
+                <li><strong><em>Tactile</em></strong> feedback typically involves vibration on mobile devices.</li>
+            </ul>
+
+            <p><strong>🙌 Cycles and Modes</strong></p>
+
+            <ul>
+                <li><strong><em>Cycles</em></strong> of a microinteraction determine its behavior over time: the duration, repetition frequency and the changes that occur when the interaction is repeated. For example, a repeating cycle can be illustrated by the sound signal of a microwave oven, which repeats after some time if the door is not opened after heating is complete;</li>
+                <li><strong><em>Modes</em></strong> define how a microinteraction adapts to changes in context or conditions. For instance, if a user activates the silent mode on their smartphone, sound notifications will be disabled.</li>
+            </ul>
+
+            <h3 id="breaking-down-microinteraction-anatomy-an-animated-carousel-example"><strong>Breaking Down Microinteraction Anatomy: An Animated Carousel Example</strong></h3>
+
+            <p>To see how the structure functions in the real world, let’s consider the example of an animated carousel used in the onboarding process of one of Elinext’s projects.</p>
+
+            <p>We will break down this microinteraction into the four core components we discussed earlier.</p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50800/original/23a090f53ef81d93691a0722ae3e8632.gif?1699304525"></div>
+
+            <p><strong>🙌 Triggers</strong></p>
+
+            <p>In our example, there are two triggers that initiate slide switching. The first trigger is system-initiated: the slides change automatically every 5 seconds. The second trigger is user-initiated: the user can manually switch slides by swiping left or right.</p>
+
+            <p><strong>🙌 Rules</strong></p>
+
+            <p>In the case of the carousel, the rules establish the order of slides, the delay time before automatic switching, and the ways users can manually navigate between slides. Additionally, the rules specify situations in which the automatic slide change is paused (in our case, when the user starts swiping).</p>
+
+            <p><strong>🙌 Feedback</strong></p>
+
+            <p>In the carousel, visual feedback is used. It involves an animated transition from one slide to another when the trigger is activated.</p>
+
+            <p><strong>🙌 Cycles and Modes</strong></p>
+
+            <p>The cycle of our microinteraction starts with the demonstration of the first slide and ends with displaying the last one. After that, the cycle automatically repeats. This cycle remains unchanged when replayed.</p>
+
+            <h3 id="microinteractions-in-real-life-examples"><strong>Microinteractions in Real-Life Examples</strong></h3>
+
+            <p>To better understand how microinteractions work in practice, let’s explore a few examples implemented in Elinext’s projects.</p>
+
+            <p><strong>👾 Dragging</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50801/original/fc8b4487e6f6bf8bf422b3b891c57d27.gif?1699304559"></div>
+
+            <p>Dragging is a very common microinteraction often found in task trackers and list-based applications. It allows users to move objects, change their order, and transfer them to different sections. This pattern creates a sense of interaction with real physical objects.</p>
+
+            <p>For example, when you drag a task from one section to another, it’s like moving a task sheet made of paper from one folder to another. This tactile stimulation engages users, leading them to spend more time in the app.</p>
+
+            <p><strong>👾 Interactive Dashboards</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50805/original/4cc13a3d65e23a98c93933d6a93fc30d.gif?1699304724"></div>
+
+            <p>Dashboards provide a large playground for implementing microinteractions. You can make widgets more dynamic, allowing users to zoom in and out of maps and charts, navigate freely, update statistics in real time, and customize settings on charts and graphs.</p>
+
+            <p>These techniques encourage existing users to engage with the application more frequently.</p>
+
+            <p><strong>👾 Hover Effects</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/51002/original/hover-effect-placeholder.jpg?1699996846"></div>
+
+            <p>Without hover effects, a modern user can’t imagine a web interface anymore, this microinteraction is among the “must-haves”.</p>
+
+            <p>When you move your cursor over a clickable item, it should change its state to indicate that it’s interactive. This pattern significantly simplifies navigation by making it clear which objects are clickable and which are not. Additionally, hover effects can make essential elements more noticeable, increasing the chances of completing specific actions, such as making a purchase or subscribing.</p>
+
+            <p><strong>👾 Popovers &amp; tooltips</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50804/original/d91d88aebd856828449749ce6fa891f8.gif?1699304816"></div>
+
+            <p>Popovers are pop-up windows that provide additional information without navigating to another page. They are usually triggered by clicking on a specific interface element and can be closed by clicking in the negative space.</p>
+
+            <p>Tooltips, on the other hand, offer hints and extra information when hovering over a specific element. Both of these microinteractions help save space on the main screen without overloading it.</p>
+
+            <p>Tooltips reduce bounce rates by giving guidance to anyone experiencing confusion. Moreover, they significantly reduce the load on the support team.</p>
+
+            <p><strong>👾 Autocomplete</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50806/original/a992a603d85b1d16b030e777beb9bb35.gif?1699304995"></div>
+
+            <p>As soon as the user starts typing text or initial letters, autocomplete suggests options that match the entered characters. This saves time and eliminates the need for laborious text entry. Another advantage here is that it eliminates the likelihood of errors in entered data, thereby increasing the chances of successfully completing the intended actions.</p>
+
+            <p><strong>👾 Day-Night Mode Switching</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50807/original/30cfe1119e22135d24660b1e2fb6b389.gif?1699305154"></div>
+
+            <p>Day-Night modes contribute to a more comfortable app usage experience at different times of the day, which, in turn, leads to enhanced user engagement and a rise in the overall number of sessions.</p>
+
+            <p><strong>👾 Microinteractions in Tables</strong></p>
+
+            <div class="photo-large"><img src="https://cdn.dribbble.com/uploads/50810/original/12546ac24db2e1adb7ecbba4e73ec9d2.gif?1699305652"></div>
+
+            <p>If you add microinteractions to a table, working with it becomes much more convenient and enjoyable. For instance, automatic data updates allow users to see the freshest information without reloading the page. Animation during updates makes the table more dynamic and engaging.</p>
+
+            <p>As you may have noticed, what users see in microinteractions is just the tip of the iceberg. Behind small animations often lies detailed, systemic work. But these efforts pay off, making users’ lives a bit better and more pleasant.</p>
+
+            <p>Investments in the development of UX microinteractions and overall user experience pay off multiple times, making them a very profitable investment.</p>
+
+            <h3 id="conclusion"><strong>Conclusion</strong></h3>
+
+            <p>In conclusion, microinteractions are a powerful tool that can significantly improve the user experience and bring substantial benefits to businesses. However, it’s important to remember that before delving into microinteractions, you need to thoroughly and reliably develop the core functionality and architecture of your application, because functionality serves as the foundation of the product.</p>
+
+            <p>You can compare this to Maslow’s Hierarchy of Needs: first, we address the basic things we require to exist; after that, we move on to higher-level needs. If the core functionality isn’t working, all the micro-details we discussed today will simply be meaningless.</p>
+
+            <p>Once we’ve reliably established the foundational stage, microinteractions help us elevate the product to a substantially higher level of quality!</p>
+
+            <p><em>If you’re looking for skilled UX/UI designers, <a href="https://dribbble.com/elinext">Elinext</a> is here to be your reliable UI/UX partner. With over 26 years of experience, Elinext specializes in creating appealing designs and also in developing user-friendly software solutions aimed at achieving your business goals through intuitive user interfaces.</em></p>
+
+            <p><em>We are experts in various industries, including healthcare, finance, IoT, telecommunications, and e-commerce.</em></p>
+
+            <p><strong><em><a href="http://drbl.in/k/20231114_Elinext5">Learn more about us!</a></em></strong></p>
+
+            <script src="https://cdn.dribbble.com/assets/packs/js/story-page.68758f024d2e7abbbae7.js"></script>
+
+            <p><em>
+                    Find more <a href="/stories/categories/community">Community</a> stories on our blog <a href="/stories">Courtside</a>.
+                    Have a suggestion? Contact <a href="mailto:stories@dribbble.com">stories@dribbble.com</a>.
+                </em></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
